@@ -95,8 +95,6 @@ namespace HotelListing.Controllers
                 _logger.LogError(ex, $"Something Went Wrong in the {nameof(Login)}");
                 return Problem($"Something Went Wrong in the {nameof(Login)}", statusCode: 500);
             }
-
-
         }
 
     }

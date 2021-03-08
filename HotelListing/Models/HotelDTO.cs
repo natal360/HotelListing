@@ -20,7 +20,7 @@ namespace HotelListing.Models
         [Range(1,5)]
         public double Rating { get; set; }
 
-        [Required]
+        ////[Required]
         public int CountryId { get; set; }
 
     }
@@ -29,5 +29,10 @@ namespace HotelListing.Models
     {
         public int Id { get; set; }
         public CountryDTO Country { get; set; }
+    }
+
+    //automapper 追加必要
+    public class UpdateHotelDTO : CreateHotelDTO
+    {
     }
 }
